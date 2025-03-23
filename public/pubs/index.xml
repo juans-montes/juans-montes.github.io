@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Publications on Juan Sebastián Montes Maestre</title>
+    <link>http://localhost:1313/pubs/</link>
+    <description>Recent content in Publications on Juan Sebastián Montes Maestre</description>
+    <image>
+      <title>Juan Sebastián Montes Maestre</title>
+      <url>http://localhost:1313/imgs/cover.svg</url>
+      <link>http://localhost:1313/imgs/cover.svg</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pubs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q3T Prisms: A Linear-Quadratic Solid Shell Element for Elastoplastic Surfaces</title>
+      <link>http://localhost:1313/pubs/07-sa25-q3t/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/07-sa25-q3t/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FlexScale: Modeling and Characterization of Flexible Scaled Sheets</title>
+      <link>http://localhost:1313/pubs/06-s25-flexscale/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/06-s25-flexscale/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ToRoS: A Topology Optimization Approach for Designing Robotic Skins</title>
+      <link>http://localhost:1313/pubs/05-sa24-toros/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/05-sa24-toros/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Differentiable Stripe Patterns for Inverse Design of Structured Surfaces</title>
+      <link>http://localhost:1313/pubs/04-s24-stripes/</link>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/04-s24-stripes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programmable Digital Weaves</title>
+      <link>http://localhost:1313/pubs/03-ra22-weaves/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/03-ra22-weaves/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computational design of skintight clothing</title>
+      <link>http://localhost:1313/pubs/02-s20-skintight/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/02-s20-skintight/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topology-aware reconstruction of thin tubular structures</title>
+      <link>http://localhost:1313/pubs/01-sa14-thin/</link>
+      <pubDate>Mon, 24 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pubs/01-sa14-thin/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

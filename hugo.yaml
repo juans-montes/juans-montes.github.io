@@ -1,0 +1,116 @@
+baseURL: "https://juans-montes.github.io/"
+title: Juan Sebastián Montes Maestre
+pagination.pagerSize: 20
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-X55E4HCL77
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Juan Sebastián Montes Maestre
+  description: "Postdoctoral researcher"
+  keywords: ["computer graphics", "physics-based simulation", "digital fabrication", "researcher"]
+  author: Me
+  images: ["imgs/cover.svg"]
+  defaultTheme: light
+  disableThemeToggle: false
+
+  ShowOnlySelectedPubs: true
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text:
+    icon: /apple-touch-icon.png
+    iconHeight: 
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    
+
+  # home-info mode
+  homeInfoParams:
+    Title: Juan Sebastián Montes Maestre
+    Content: >
+      I am a postdoctoral researcher at the [Computational Robotics Lab (CRL)](https://crl.ethz.ch) at ETH Zürich. I work under the supervision of Prof. Stelian Coros and Dr. Bernhard Thomaszewski. My research spans several key areas within computational robotics, physics-based simulation, and digital fabrication, with broad applications in engineering, soft robotics, and design. My goal is to develop computational methods that enhance how we simulate, fabricate, and interact with mechanical systems, bridging the gap between virtual models and real-world applications.
+      I obtained my PhD and Master’s degrees from Concordia University in Montreal, Canada, under the supervision of [Tiberiu Popa](https://users.encs.concordia.ca/~stpopa), and earned my undergraduate degree from Universidad de los Andes in Bogotá, Colombia.
+      I’m an avid enthusiast of endurance sports, various other athletic activities, chess, and most notably, the videogame Age of Empires 2. Go TheViper!
+    imageUrl: "/imgs/profile.jpg"
+    imageTitle: profile
+    imageWidth: 120
+    imageHeight: 120
+
+  socialIcons:
+    - name: email
+      url: "mailto:jmontes@inf.ethz.ch"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=4LklEL8AAAAJ"
+
+  analytics:
+    google:
+      SiteVerificationTag: -1-9r4oo9sAFcKiCWEg8koj3qpJdLUOO3-2L_E0jYqs
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - name: Publications
+      url: pubs
+      weight: 10
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
