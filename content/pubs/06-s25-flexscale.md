@@ -5,6 +5,7 @@ venue: "ACM Transactions on Graphics (Proc. ACM SIGGRAPH 2024)"
 authors:
   - name: <strong>Juan Montes Maestre</strong>
   - name: Yinwei Du
+  - name: Ronan Hinchet
   - name: Stelian Coros
   - name: Bernhard Thomaszewski
 paper: https://doi.org/10.1145/3658175
