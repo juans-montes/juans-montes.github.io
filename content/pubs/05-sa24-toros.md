@@ -9,6 +9,18 @@ authors:
   - name: Bernhard Thomaszewski
 selected: true
 cover:
-  image: imgs/pubs/toros.jpg
-paper: https://doi.org/10.1145/3618382
+  image: /imgs/pubs/toros.jpg
+paper: /files/papers/toros.pdf
+publication: https://doi.org/10.1145/3618382
+slug: toros
+layout: paper
+citation: /files/citations/toros.bib
+page: /pubs/toros/
+hideSummary: true
+aliases:
+  - /pubs/05-sa24-toros/
 ---
+
+## Overview
+
+ToRoS combines topology optimization with a manufacturing approach for robotic skins. Simulation and optimization determine material distributions that produce targeted deformations, supporting the design of soft robotic structures.

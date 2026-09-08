@@ -8,8 +8,20 @@ authors:
   - name: Ronan Hinchet
   - name: Stelian Coros
   - name: Bernhard Thomaszewski
-paper: https://doi.org/10.1145/3592114
+paper: /files/papers/stripes.pdf
 selected: true
 cover:
-  image: imgs/pubs/stripes.jpg
+  image: /imgs/pubs/stripes.jpg
+publication: https://doi.org/10.1145/3592114
+slug: stripes
+layout: paper
+citation: /files/citations/stripes.bib
+page: /pubs/stripes/
+hideSummary: true
+aliases:
+  - /pubs/04-s24-stripes/
 ---
+
+## Overview
+
+Differentiable Stripe Patterns enable inverse design of surfaces made from two materials arranged in stripes. A differentiable pattern formulation and solid-shell simulation connect stripe geometry to mechanical behavior, allowing optimization toward target deformations. Physical prototypes validate the designs.

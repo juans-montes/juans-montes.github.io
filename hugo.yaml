@@ -24,7 +24,6 @@ params:
   defaultTheme: light
   disableThemeToggle: false
 
-  ShowOnlySelectedPubs: true
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true

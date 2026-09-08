@@ -1,0 +1,10 @@
+<article class="pub-entry">
+  {{ partial "publication-teaser.html" . }}
+  <div class="pub-meta">
+    <header class="entry-header">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    </header>
+    <div class="entry-content">{{ partial "pub_entry_authors.html" . }}</div>
+    <div class="entry-footer">{{ partial "pub_entry_links.html" . }}</div>
+  </div>
+</article>

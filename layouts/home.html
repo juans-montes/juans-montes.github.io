@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ with site.Params.homeInfoParams }}
+  {{ partial "home_info.html" $ }}
+{{ end }}
+<div class="post-content">
+  <h2>Featured publications</h2>
+  <p><a href="{{ "pubs/" | relURL }}">View all publications →</a></p>
+</div>
+{{ $publications := where site.RegularPages "Type" "pubs" }}
+{{/* Use the numbered filenames to break ties for year-only publication dates. */}}
+{{ $publications = sort $publications "File.Path" "desc" }}
+{{ range first 3 (sort $publications "Date" "desc") }}
+  {{ partial "publication-card.html" . }}
+{{ end }}
+{{ end }}

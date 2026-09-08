@@ -1,0 +1,9 @@
+{{ with .Params.cover.image }}
+<figure class="entry-cover">
+  <a href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.cover.alt | default (printf "%s teaser" $.Title) }}" loading="{{ if $.IsPage }}eager{{ else }}lazy{{ end }}" style="object-fit: contain;">
+  </a>
+</figure>
+{{ else }}
+  {{ errorf "Missing publication teaser: %s" .File.Path }}
+{{ end }}

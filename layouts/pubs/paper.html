@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-description">{{ partial "pub_entry_authors.html" . }}</div>
+    <div class="post-content">
+      {{ if hasPrefix .Params.paper "/" }}
+      <a href="{{ .Params.paper | relURL }}" download>Download paper (PDF)</a>
+      {{ else }}
+      <a href="{{ .Params.paper }}" target="_blank" rel="noopener noreferrer">Read paper</a>
+      {{ end }}
+      {{ with .Params.publication }} · <a href="{{ . }}" target="_blank" rel="noopener noreferrer">Publication record</a>{{ end }}
+    </div>
+  </header>
+  {{ $teaser := .Params.teaser | default .Params.cover.image }}
+  <figure class="project-teaser" style="margin: 0 0 var(--gap); width: 100%;">
+    <a href="{{ $teaser | relURL }}" aria-label="View full-size teaser">
+      <img src="{{ $teaser | relURL }}" alt="{{ .Params.cover.alt | default (printf "%s teaser" .Title) }}" loading="eager" style="display: block; width: 100%; height: auto; max-height: none; object-fit: contain;">
+    </a>
+  </figure>
+  <div class="post-content">{{ .Content }}</div>
+  {{ with .Params.citation }}
+  <section class="post-content" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">How to cite</h2>
+    <p>BibTeX · <a href="{{ . | relURL }}" download>Download citation</a></p>
+    <pre><code id="paper-citation">{{ readFile (printf "static%s" .) }}</code></pre>
+    <button id="copy-citation" type="button" hidden style="padding: .5rem 1rem; border: 1px solid currentColor; border-radius: .4rem; cursor: pointer;">Copy BibTeX</button>
+    <span id="citation-status" role="status" aria-live="polite"></span>
+  </section>
+  {{ $script := resources.Get "js/citation.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+  {{ else }}
+  {{ errorf "Missing publication citation: %s" .File.Path }}
+  {{ end }}
+  <footer class="post-footer"><a href="{{ "pubs/" | relURL }}">← All publications</a></footer>
+</article>
+{{ end }}

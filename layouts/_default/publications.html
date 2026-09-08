@@ -1,0 +1,8 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>All publications</h1>
+</header>
+{{ range .RegularPages.ByDate.Reverse }}
+  {{ partial "publication-card.html" . }}
+{{ end }}
+{{ end }}
